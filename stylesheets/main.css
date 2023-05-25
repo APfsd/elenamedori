@@ -1,0 +1,383 @@
+/**************GENERAL*************/
+
+*{
+	box-sizing: border-box;
+} 
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+  font-family: 'Figtree', sans-serif;
+	color: #000000;
+	font-size: 1.6rem;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0px 25px;
+}
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+.active{
+	color: #ffffff;
+
+}
+
+img {
+	width: 100%;
+}
+
+
+main {
+	min-height: calc(100vh - 120px - 120.2px);
+	padding-top: 154px;
+}
+
+/*******************HEADER******************/
+
+header {
+	background: #00ace6;
+	width: 100%;
+	text-align: center;
+  position: fixed;
+  z-index: 1;
+}
+
+header h1 {
+	font-weight: 400;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 3.6rem;
+	padding-left: 25px;
+
+	
+}
+
+/*****************NAVIGATION********************/
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+}
+nav li a{
+	margin: 10px;
+}
+nav{
+	padding: 2px;
+
+}
+
+/******************HOMEGALLERY**********************/
+
+
+#homegallery .item1{
+	display: flex;
+	justify-content: center;
+
+}
+
+#homegallery .caption{
+	text-align: center;
+}
+
+/*************************GALLERY******************/
+
+#gallery{ 
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#gallery img{
+	width: 100%;
+}
+
+#gallery .item:hover {
+	opacity: .7;
+}
+#gallery .item {
+  transition: opacity .3s;
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+#gallery .caption{
+	background: #f0f0f0;
+	padding: 10px;
+} 
+#gallery .caption p {
+	margin: 0px;
+}
+#gallery .caption img{
+	width: 25px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+/**********************ABOUT*************************/
+
+#about img {
+	border-radius: 100%;
+	padding: 25px 0px;
+}
+
+#about .description {
+	text-align: justify;
+}
+
+/**********************CONTACT*************************/
+
+#contact .material-icons{
+	font-size: 24px;
+}
+
+#contact .contatti a{
+	margin: 0px 0px 5px 15px;
+	display: inline-block;
+}
+
+
+
+
+/**********************FOOTER*************************/
+
+footer.main{
+	text-align: center;
+	padding: 12px;
+	margin-top: 25px;
+}
+footer.main img {
+	width: 30px;
+	margin: 0px 7px;
+}
+footer.main p{
+	font-size: 1.2rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+/*****************HEADER*************/
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 25px;
+}
+
+
+
+
+/*************************GALLERY******************/
+
+
+}
+
+}
+
+/**********************ABOUT*************************/
+
+#about h1{
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+#about img {
+	padding: 25px;
+}
+
+#about {
+	display: flex;
+}
+
+#about .profile-pic {
+	width: 50%;
+	padding: 15px;
+	padding-right: 30px;
+	padding-top: 100px;
+}
+
+#about .description {
+	width: 50%;
+	padding: 15px;
+	padding-left: 30px;
+}
+
+/**********************CONTACT*************************/
+
+#contact{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 15px;
+}
+
+#contact .info {
+	width: 60%;
+	
+	padding-right: 30px;
+}
+#contact .info h1 {
+	font-size: 2.2rem;
+}
+#contact .info p {
+	font-size: 1.6rem;
+	text-align: justify;
+	line-height: 25px;
+}
+
+#contact .contatti{
+	width: 40%;
+	
+}
+
+#contact .contatti h1{
+	font-size: 2.2rem;
+  padding-left: 40px;
+}
+#contact .contatti ul{
+	list-style-type: none;
+	line-height: 25px;
+}
+
+#contact .material-icons{
+	font-size: 24px;
+}
+
+#contact .contatti a{
+	margin: 0px 0px 5px 15px;
+	display: inline-block;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-width:992px) {
+
+
+#gallery .item:hover {
+	opacity: .7;
+}
+#gallery .item {
+  transition: opacity .3s;
+}
+
+
+
+}
+
+
+@media only screen and (max-width:767px) {
+
+/*******************HEADER******************/
+header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+
+}
+
+ul li a {
+    padding: 10px;
+    margin: 0;
+}
+
+.logocontainer {
+	text-align: left;
+}
+
+/*************************GALLERY******************/	
+
+
+	
+
+
+/**********************ABOUT*************************/
+
+#about {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#about .profile-pic{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+#about h1{
+	font-size: 2.0rem;
+	text-align: center;
+}
+#about .description{
+	width: 100%;
+}
+
+
+/**********************CONTACT*************************/
+
+#contact {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#contact .info {
+	width: 100%;
+}
+
+#contact .contatti{
+	width: 100%;
+}
+
+#contact .info h1{
+  font-size: 2.0rem;
+  text-align: center;
+}
+
+#contact .contatti h1{
+	font-size: 2.0rem;
+	text-align: center;
+	padding: 0;
+}
+
+#contact .material-icons {
+	font-size: 18px;
+}
+
+.contatti ul li a{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+}
+
+
+
+
+
+
